@@ -1,0 +1,20 @@
+Index: public/modules/contrib/menu_block/src/Plugin/Block/MenuBlock.php
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- public/modules/contrib/menu_block/src/Plugin/Block/MenuBlock.php	(revision a703b1204aeb96f5ca92f57ad4a7527ce40ae2b8)
++++ public/modules/contrib/menu_block/src/Plugin/Block/MenuBlock.php	(date 1527061873000)
+@@ -200,7 +200,11 @@
+       'route_parameters' => ['menu' => $menu_name],
+     ];
+ 
+-    return $build;
++    if(array_key_exists('#items', $build)) {
++      return $build;
++    } else {
++      return null;
++    }
+   }
+ 
+   /**
