@@ -5,7 +5,5 @@ More Drupal 8 code snippets: https://stefvanlooveren.me.<br/>
 Follow me on Twitter: https://twitter.com/stefvanlooveren.<br/>
 Linkedin: https://www.linkedin.com/in/stef-van-looveren-06601a26<br/>
 Drupal.org profile: https://www.drupal.org/u/stef-van-looveren.<br/>
-## paragraphs-8.x.1.0-multilanguage-support ##
-Only enable multilanguage checkbox on the paragraphs field of your node (f.e. field_paragraphs), not on the fields inside the paragraph(s). When translating your node, all paragraphs get copied to your translated node. From there you can start editing. 
 ## menu_block-8.x-1.5-empty-region.patch ##
 This patch will fix the problem of a region showing up, even when the sidebar submenu has no subitems
